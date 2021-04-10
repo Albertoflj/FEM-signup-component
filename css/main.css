@@ -1,0 +1,248 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: #ff7a7a;
+  background-image: url("../images/bg-intro-desktop.png");
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-text {
+  max-width: 500px;
+  color: white;
+}
+
+.main-text h1 {
+  line-height: 1.2;
+  font-size: 52px;
+}
+
+.main-text p {
+  margin: 0;
+  font-size: 17px;
+}
+
+.right-content {
+  max-width: 540px;
+  width: calc(100% - 48px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offer {
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  background-color: #6055a5;
+  border-radius: 10px;
+}
+
+.offer p {
+  margin: 0 10px;
+  color: white;
+}
+
+.form {
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 24px;
+  border-radius: 10px;
+  min-height: 474px;
+  width: 100%;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form .textbox:first-child {
+  margin-top: 40px;
+}
+
+.form .textbox {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 460px;
+  width: calc(100% - 48px);
+}
+
+.form .textbox img {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+
+.form .textbox p {
+  font-size: 11px;
+  color: #ff7a7a;
+  right: -20px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.form input {
+  padding-left: 34px;
+  font-weight: 700;
+  max-width: 426px;
+  height: 56px;
+  border-radius: 5px;
+  border: 1px solid #b9b6d3;
+  width: calc(100% - 38px);
+  outline: none;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.form input:focus {
+  -webkit-box-shadow: 0 0 0 1pt #3e3c49;
+          box-shadow: 0 0 0 1pt #3e3c49;
+}
+
+.form button {
+  width: calc(100% - 48px);
+  font-family: 'Poppins', sans-serif;
+  max-width: 460px;
+  height: 56px;
+  background-color: #38cc8c;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background-color: #43b685;
+}
+
+.form button:active {
+  background-color: #44e49f;
+}
+
+.form p {
+  font-weight: 500;
+  text-align: center;
+  font-size: 11px;
+  color: #b9b6d3;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.form a, .form a:visited {
+  color: #ff7a7a;
+  text-decoration: none;
+}
+
+.form a:hover {
+  -webkit-text-emphasis-color: #ff7a7a;
+          text-emphasis-color: #ff7a7a;
+  text-decoration: underline;
+}
+
+form {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.error {
+  margin-bottom: 42px;
+}
+
+.error input {
+  -webkit-box-shadow: 0 0 0 1pt #ff7a7a;
+          box-shadow: 0 0 0 1pt #ff7a7a;
+}
+
+.no-error-margin {
+  margin-bottom: 20px;
+}
+
+.dnon img {
+  display: none;
+}
+
+.dnon p {
+  display: none;
+}
+
+@media (max-width: 76.25rem) {
+  body {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    margin: 0 24px;
+    text-align: center;
+  }
+  .main-text h1 {
+    font-size: 30px;
+  }
+  .main-text p {
+    font-size: 16px;
+  }
+  .right-content {
+    margin: 0 24px;
+    margin-top: 63px;
+  }
+  .offer p {
+    font-size: 16px;
+  }
+  .form button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  body {
+    background-image: url("../images/bg-intro-mobile.png");
+  }
+}
+/*# sourceMappingURL=main.css.map */
